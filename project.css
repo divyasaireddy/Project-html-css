@@ -76,7 +76,6 @@
     from{transform: rotateX(0deg) translateX(0px);}
     to{transform:  rotateY(360deg) translateY(100px); }
 }
-
 .middle-head-content {
     margin-left: 500px;
     width: 500px;
@@ -110,7 +109,7 @@
     animation-iteration-count: infinite;
 }
 @keyframes office{
-    from{transform: translateY(200px);}
+    from{transform: translateY(0px);}
     to{transform:  translateY(-100px);}
 }
 
@@ -182,21 +181,17 @@
     height: 300px;
     margin-top: 80px;
 }
-.last-body img:hover{
+.last-body img{
     animation-name: image;
     animation-duration: 10s;
+    animation-timing-function: ease-in-out;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
 }
 @keyframes image{
-    from{transform: rotate(0deg);}
-    to{transform: rotate(360deg) translateY(30px);}
+    from{transform: translateX(0px);}
+    to{transform: translateX(-150px);}
 }
-.last-body img:hover{
-    border-radius: 50%;
-    border:5px dotted #FFB000;
-}
-
 .last-body-content-upper {
     color: gray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -330,7 +325,6 @@ span {
     .top-left-content {
         text-align: center;
     }
-
     .middle-head-content {
         margin-left: 0;
         width: 100%;
